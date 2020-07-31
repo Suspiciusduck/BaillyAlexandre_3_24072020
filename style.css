@@ -52,3 +52,37 @@ main {
     align-items: center;
     text-align: center;
 }
+
+.menuslanote, .menuslechic, .menuslesdelices, .menuslapalette {
+    box-shadow: 0 0 10px 6px #e8e8e8;
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+}
+
+.menuslechic, .menuslesdelices, .menuslapalette, .menuslanote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuslanote{
+    background-color: #fcdfdb;
+    font-family: "Kalam", cursive;
+}
+
+.menuslechic{
+    background-color: #fff5fe;
+    color: #c77412;
+    font-family: "Croissant One", cursive;
+}
+
+.menuslesdelices {
+    background-color: #edefef;
+    color: #0887fb;
+}
+
+.menuslapalette {
+    background-color: #fdfffd;
+    color: #72bf56;
+}
