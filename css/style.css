@@ -92,6 +92,10 @@ footer,
     width: auto;
 }
 
+.button{
+    
+}
+
 .link_header_footer {
     color: var(--color-text-primary);
     text-decoration: none;
