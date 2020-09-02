@@ -478,13 +478,10 @@ h3 {
     margin-left: 20px;
     margin-right: 20px;
 }
-.title-starter-lechic,
+,.title-starter-lechic
 .title-maincourse-lechic,
 .title-desert-lechic {
     font-weight: bold;
-    background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
-    background-size: 0 100%;
-    transition: background-size 1s;
     font-size: 1em;
 }
 
@@ -492,6 +489,24 @@ h3 {
 .title-maincourse-lechic:hover,
 .title-desert-lechic:hover {
     background-size: 100% 100%;
+}
+
+.title-starter-lechic {
+    background: linear-gradient(to top, #c77412 3px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+}
+
+.title-maincourse-lechic {
+    background: linear-gradient(to top, #a56799 3px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+}
+
+.title-desert-lechic {
+    background: linear-gradient(to top, #a68bdf 3px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;  
 }
 
 .color-text-desert {
@@ -548,7 +563,7 @@ h3 {
 .title-main-lapalette,
 .title-end-lapalette {
     font-weight: bold;
-    background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+    background: linear-gradient(to top, #c0fd87 3px, transparent 2px) no-repeat;
     background-size: 0 100%;
     transition: background-size 1s;
     font-size: 1em;
@@ -603,7 +618,7 @@ h3 {
 
 .coursetitle-ledelice {
     font-weight: bold;
-    background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+    background: linear-gradient(to top, #0887fb  3px, transparent 2px) no-repeat;
     background-size: 0 100%;
     transition: background-size 1s;
     font-size: 1em;
@@ -614,7 +629,7 @@ h3 {
 }
 
 .text-ledelice {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 50px;
 }
 
@@ -682,7 +697,7 @@ h3 {
     /*le delice des papilles*/
 
     .coursetitle-ledelice {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .text-ledelice {
@@ -779,7 +794,7 @@ h3 {
     /*le delice*/
 
     .text-ledelice {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 }
 
