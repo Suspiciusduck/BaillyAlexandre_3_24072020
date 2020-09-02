@@ -492,19 +492,19 @@ h3 {
 }
 
 .title-starter-lechic {
-    background: linear-gradient(to top, #c77412 3px, transparent 2px) no-repeat;
+    background: linear-gradient(to top, #c77412 2px, transparent 2px) no-repeat;
     background-size: 0 100%;
     transition: background-size 1s;
 }
 
 .title-maincourse-lechic {
-    background: linear-gradient(to top, #a56799 3px, transparent 2px) no-repeat;
+    background: linear-gradient(to top, #a56799 2px, transparent 2px) no-repeat;
     background-size: 0 100%;
     transition: background-size 1s;
 }
 
 .title-desert-lechic {
-    background: linear-gradient(to top, #a68bdf 3px, transparent 2px) no-repeat;
+    background: linear-gradient(to top, #a68bdf 2px, transparent 2px) no-repeat;
     background-size: 0 100%;
     transition: background-size 1s;  
 }
