@@ -1,0 +1,793 @@
+
+@keyframes dotty{
+    0%   { content: ''; }
+    25%  { content: '.'; }
+    50%  { content: '..'; }
+    75%  { content: '...'; }
+    100% { content: ''; }
+}
+
+@keyframes wiggle{
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+:root {
+    --color-primary: #579c87;
+    --color-text-primary: #fdcb46;
+    --menu1-background-color: #fcdfdb;
+    --menu1-text-color: black;
+    --menu2-background-color: #fff5fe;
+    --menu2-text-color: #c77412;
+    --starter-menu2-color: #c77412;
+    --main-menu2-color: #a56799;
+    --end-menu2-color: #a68bdf;
+    --menu3-background-color: #edefef;
+    --menu3-text-color: #0887fb;
+    --menu3-title-primary: #0887fb;
+    --menu3-title-secondary: #c2dcf5;
+    --menu4-background-color: #fdfffd;
+    --menu4-text-color: #72bf56;
+    --menu4-title-primary: #72bf56;
+    --menu4-title-secondary: #ddf5d4;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: .625em;
+    font-size: calc(1em * .625);
+    background-color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4em;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+/*first page*/
+
+header,
+footer,
+.button {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    font-family: "Montserrat", cursive;
+    text-decoration: none;
+    width: auto;
+}
+
+.link_header_footer {
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #97c67b solid 2px;
+    width: 100%;
+    height: 100px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu_transform:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+
+}
+
+.menu_transform {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    text-decoration: none;
+}
+
+.box1:visited {
+    color: var(--menu1-text-color)
+}
+
+.size-title-menu {
+    font-size: 2.2em;
+}
+
+.size-restaurant-name {
+    font-size: 1.6em;
+}
+
+.menuslanote {
+    box-shadow: 0 0 10px 6px #e8e8e8;
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+    background-color: var(--menu1-background-color);
+    font-family: "Kalam", cursive;
+}
+
+.image-note {
+    margin-top: 0;
+    width: 80px;
+    height: 60px;
+}
+
+.titlelanote {
+    margin-top: 0;
+    font-family: "Devonshire", cursive;
+    font-size: 1.9em;
+    margin-bottom: 15px;
+}
+
+.title-menulanote {
+    margin-top: 0px;
+    margin-bottom: 10px; 
+}
+
+.menuslechic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px 6px #e8e8e8;
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+    background-color: var(--menu2-background-color);
+    color: var(--menu2-text-color);
+}
+
+.titlelechic {
+    font-family: "Croissant One", cursive;
+    background: linear-gradient(to right, #c77529 0%, #8f5bfe 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-menulechic {
+    font-family: "Playfair Display", serif;
+    color: var(--starter-menu2-color);
+    letter-spacing: 0.1em;
+    margin:0;
+}
+
+.menuslesdelices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px 6px #e8e8e8;
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+    background-color: var(--menu3-background-color);
+    color: var(--menu3-text-color);
+}
+
+.titleledelice {
+    font-family: "Parisienne", cursive;
+    background: linear-gradient(to right, #0431df 0%, #0887fb 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-menuledelice {
+    font-family: "Patrick Hand", cursive;
+    color: var(--menu3-title-primary);
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.menuslapalette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    box-shadow: 0 0 10px 6px #e8e8e8;
+    width: 300px;
+    height: 400px;
+    background-color: var(--menu4-background-color);
+    color: var(--menu4-text-color);
+}
+
+.titlelapalette {
+    font-family: "Kaushan Script", cursive;
+    background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-menulapalette {
+    font-family: "Patrick Hand", cursive;
+    color: var(--menu4-title-primary);
+    font-style: italic;
+    margin-top: 0;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.7em;
+    margin-top: 15px;
+}
+
+.button:after {
+    animation: dotty steps(1,end) 1s infinite;
+    content: '';
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 1.2em;
+    width: 100%;
+    height: 9vh;
+    border-bottom: #97c67b solid 2px;
+}
+
+footer a:hover {
+    animation: wiggle 1s;
+    animation-iteration-count: infinite;
+}
+
+.link-footer:first-child {
+    margin-left: 20px;
+}
+
+.link-footer:last-child {
+    margin-right: 20px;
+}
+
+.main-title {
+    text-decoration: none;
+    color: var(--color-text-primary) ;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: var(--color-text-primary) ;
+}
+
+/*menu la note*/
+
+.layout-main-menu-lanote {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: "Kalam", cursive;
+}
+
+.layout-article-lanote {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    height: 60%;
+    background-color: var(--menu1-background-color);
+    box-shadow: 0 0 10px 6px #e8e8e8;
+}
+
+.header-secondary {
+    max-height: 100%;
+    max-width: 100%;
+    font-family: "Kalam", cursive;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: none;
+    color: var(--menu1-text-color);
+}
+
+ul {
+    margin-bottom: 50px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+li {
+    align-items: flex-start;
+}
+
+.size-line {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.image-note-1 {
+    margin-top: 50px;
+    width: 120px;
+    height: 90px;
+}
+
+.title-lanote {
+    font-family: "Devonshire", cursive;
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 0.9em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.title-starter-1,
+.title-main-2,
+.title-end-3 {
+    font-weight: bold;
+    background: linear-gradient(to top, #000000 3px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    font-size: 1.2em;
+
+}
+
+.title-starter-1:hover,
+.title-main-2:hover,
+.title-end-3:hover {
+    background-size: 100% 100%;
+}
+
+.title-starter-1 {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.title-end-3 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-menu-lanote {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.image-note-2 {
+    margin-top: 0;
+    width: 80px;
+    height: 60px;
+}
+
+.p-lanote {
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/*menu le chic*/
+
+.layout-main-menu-lechic {
+    display: flex;
+    flex-direction: column;
+    font-family: "Croissant One", cursive;
+    background-color: white;
+}
+
+.layout-article-lechic {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    height: 60%;
+    background-color: #fff5fe;
+    box-shadow: 0 0 10px 6px #e8e8e8;
+}
+
+.title-lechic {
+    background: linear-gradient(to right, #c77529 0%, #8f5bfe 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8em;
+    margin: 80px 0 50px 0;
+}
+
+.title-starter-lechic {
+    color: var(--starter-menu2-color);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.color-text-starter {
+    color: var(--starter-menu2-color);
+    margin-bottom: 50px;
+}
+.size-text-lechic{
+    font-size: 0.8em;
+}
+
+.title-maincourse-lechic {
+    color: var(--main-menu2-color);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.color-texte-maincourse {
+    color: var(--main-menu2-color);
+    margin-bottom: 50px;
+}
+
+.title-desert-lechic {
+    color: var(--end-menu2-color);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title-starter-lechic,
+.title-maincourse-lechic,
+.title-desert-lechic {
+    font-weight: bold;
+    background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    font-size: 1em;
+}
+
+.title-starter-lechic:hover,
+.title-maincourse-lechic:hover,
+.title-desert-lechic:hover {
+    background-size: 100% 100%;
+}
+
+.color-texte-desert {
+    color: var(--end-menu2-color);
+    margin-bottom: 50px;
+}
+
+.margin-desert {
+    margin-bottom: 70px;
+}
+
+/*la palette*/
+
+.layout-main-menu-lapalette {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kaushan Script", cursive;
+    background-color: white;
+}
+
+.layout-article-lapalette {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    height: 60%;
+    box-shadow: 0 0 10px 6px #e8e8e8;
+}
+
+.title-lapalette {
+    font-family: "Kaushan Script", cursive;
+    background: linear-gradient(to right, #3d9339 0%, #c0fd87 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8em;
+    margin: 80px 0 50px 0;
+}
+
+.title-starter-lapalette {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.title-main-lapalette {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.title-end-lapalette {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.title-starter-lapalette,
+.title-main-lapalette,
+.title-end-lapalette {
+    font-weight: bold;
+    background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    font-size: 1em;
+    color: var(--menu1-text-color);
+}
+
+.title-starter-lapalette:hover,
+.title-main-lapalette:hover,
+.title-end-lapalette:hover {
+    background-size: 100% 100%;
+}
+
+.text-lapalette {
+    font-size: 0.8em;
+    margin-bottom: 50px;
+}
+
+.margin-desert {
+    margin-bottom: 70px;
+}
+
+/*le delice des papilles*/
+
+.layout-main-menu-ledelice {
+    display: flex;
+    flex-direction: column;
+    font-family: "Patrick Hand", cursive;
+    background-color: white;
+}
+
+.layout-article-ledelice {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    height: 60%;
+    background-color: #edefef;
+    box-shadow: 0 0 10px 6px #e8e8e8;
+}
+
+.title-ledelice {
+    font-family: "Parisienne", cursive;
+    background: linear-gradient(to right, #0431df 0%, #0887fb 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8em;
+    margin: 80px 0 50px 0;
+}
+
+.margin-desert {
+    margin-bottom: 70px;
+}
+
+.coursetitle-ledelice {
+    font-weight: bold;
+    background: linear-gradient(to top, #000000 2px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    font-size: 1em;
+}
+
+.coursetitle-ledelice:hover {
+    background-size: 100% 100%;
+}
+
+.text-ledelice {
+    font-size: 0.8em;
+    margin-bottom: 50px;
+}
+
+/*mention legales*/
+.main-mentions-layout {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {
+
+    /*index*/
+
+    main {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 330px 330px;
+        grid-template-rows: 430px 430px;
+    }
+
+    /*la note*/
+
+    .layout-article-lanote {
+        width: 70%;
+    }
+
+    /*lechic*/
+
+    .title-starter-lechic,
+    .title-maincourse-lechic,
+    .title-desert-lechic {
+        font-size: 1.2em;
+    }
+
+    .size-title-menu-lechic {
+        font-size: 1.5em;
+    }
+
+    .size-text-lechic {
+        font-size: 1em;
+    }
+
+    /*la palette*/
+
+    .title-starter-lapalette {
+        font-size: 1.5em;
+    }
+
+    .title-main-lapalette {
+        font-size: 1.5em;
+    }
+
+    .title-end-lapalette {
+        font-size: 1.5em;
+    }
+
+    .text-lapalette {
+        font-size: 1em;
+    }
+
+    /*le delice des papilles*/
+
+    .coursetitle-ledelice {
+        font-size: 1.5em;
+    }
+
+    .text-ledelice {
+        font-size: 1em;
+    }
+
+    /* organisation des listes en mode plein ecran*/
+
+    .list-organisation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 110px;
+        margin-right:110px;
+    }
+
+    footer {
+        font-size: 1.5em;
+    }
+}
+
+/*Small devices (landscape phones, 768px and up)*/
+@media screen and (min-width: 768px) {/*lechic*/
+
+    /*la note*/
+    .title-lanote {
+        font-size: 2.4em;
+    }
+
+    .title-starter-1,
+    .title-main-2,
+    .title-end-3 {
+        font-size: 1.7em;
+    }
+
+    .p-lanote {
+        font-size: 1.5em;
+    }
+
+    /* le chic */
+
+    .title-lechic {
+        font-size: 2.8em;
+    }
+
+    .title-starter-lechic,
+    .title-maincourse-lechic,
+    .title-desert-lechic {
+        font-size: 1.6em;
+    }
+    
+    .title-starter-lechic {
+        font-size: 1.8em;
+    }
+
+    .color-text-starter {
+        font-size: 1.2em;
+    }
+
+    .title-maincourse-lechic {
+        font-size: 1.8em;
+    }
+
+    .color-text-maincourse {
+        font-size: 1.2em;
+    }
+
+    title-desert-lechic {
+        font-size: 1.8em;
+    }
+
+    .color-text-desert {
+        font-size: 1.2em;
+    }
+
+    /*la palette*/
+
+    .title-starter-lapalette {
+        font-size: 1.8em;
+    }
+
+    .title-main-lapalette {
+        font-size: 1.8em;
+    }
+
+    .title-end-lapalette {
+        font-size: 1.8em;
+    }
+
+    .text-lapalette {
+        font-size: 1.5em;
+    }
+
+    /*le delice*/
+
+    .text-ledelice {
+        font-size: 1em;
+    }
+}
+
+/*Small devices (landscape phones, 1200px and up)*/
+@media screen and (min-width: 1200px) {
+
+    .list-organisation {
+    margin-left: 150px;
+    margin-right:150px;
+    }
+}
