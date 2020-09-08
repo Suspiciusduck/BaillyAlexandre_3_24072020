@@ -36,6 +36,30 @@
     }
 }
 
+@-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 :root {
     --color-primary: #579c87;
     --color-text-primary: #fdcb46;
@@ -86,7 +110,10 @@ footer,
 }
 
 .button{
-
+    opacity: 1s;
+    background: linear-gradient(to right, 50%,  100%) repeat;
+    background-size: 70 100%;
+    transition: background-size 1s;
 }
 
 .link_header_footer {
@@ -131,6 +158,37 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.point,
+.point1,
+.point2 {
+    padding: 4px;
+}
+
+.point {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.point1 {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+}
+
+.point2 {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.4s;
+}
+
 
 .box1,
 .box2,
@@ -270,10 +328,6 @@ main {
     margin-top: 15px;
 }
 
-.button:after {
-    animation: dotty steps(1,end) 1s infinite;
-    content: '';
-}
 
 footer {
     display: flex;
@@ -719,7 +773,14 @@ h3 {
 /*Small devices (landscape phones, 768px and up)*/
 @media screen and (min-width: 768px) {/*lechic*/
 
+    /*index*/
+
+    .button {
+        margin-bottom: 30px;
+    }
+
     /*la note*/
+
     .title-lanote {
         font-size: 2.4em;
     }
