@@ -36,17 +36,6 @@
     }
 }
 
-@-webkit-keyframes dot {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 @keyframes dot {
     0% {
@@ -58,28 +47,6 @@
     100% {
         opacity: 1;
     }
-}
-
- :root {
-    css declarations;
-    --color-primary: #579c87;
-    --color-text-primary: #fdcb46;
-    --menu1-background-color: #fcdfdb;
-    --menu1-text-color: black;
-    --menu2-background-color: #fff5fe;
-    --menu2-text-color: #c77412;
-    --starter-menu2-color: #c77412;
-    --main-menu2-color: #a56799;
-    --end-menu2-color: #a68bdf;
-    --menu3-background-color: #edefef;
-    --menu3-text-color: #0887fb;
-    --menu3-title-primary: #0887fb;
-    --menu3-title-secondary: #c2dcf5;
-    --menu4-background-color: #fdfffd;
-    --menu4-text-color: #72bf56;
-    --menu4-title-primary: #72bf56;
-    --menu4-title-secondary: #ddf5d4;
-
 }
 
 html {
@@ -104,16 +71,15 @@ body {
 header,
 footer,
 .button {
-    background-color: var(--color-primary);
-    color: var(--color-text-primary);
+    background-color: #579c87;
+    color: #fdcb46;
     font-family: "Montserrat", cursive;
     text-decoration: none;
     width: auto;
 }
 
-
 .link_header_footer {
-    color: var(--color-text-primary);
+    color: #fdcb46;
     text-decoration: none;
 }
 
@@ -163,24 +129,18 @@ main {
 
 .point {
     opacity: 0;
-    -webkit-animation: dot 1.3s infinite;
-    -webkit-animation-delay: 0.0s;
     animation: dot 1.3s infinite;
     animation-delay: 0.0s;
 }
 
 .point1 {
     opacity: 0;
-    -webkit-animation: dot 1.3s infinite;
-    -webkit-animation-delay: 0.2s;
     animation: dot 1.3s infinite;
     animation-delay: 0.2s;
 }
 
 .point2 {
     opacity: 0;
-    -webkit-animation: dot 1.3s infinite;
-    -webkit-animation-delay: 0.3s;
     animation: dot 1.3s infinite;
     animation-delay: 0.4s;
 }
@@ -194,7 +154,7 @@ main {
 }
 
 .box1:visited {
-    color: var(--menu1-text-color)
+    color: black;
 }
 
 .size-title-menu {
@@ -210,7 +170,7 @@ main {
     margin: 15px;
     width: 300px;
     height: 400px;
-    background-color: var(--menu1-background-color);
+    background-color: #fcdfdb;
     font-family: "Kalam", cursive;
 }
 
@@ -240,8 +200,8 @@ main {
     margin: 15px;
     width: 300px;
     height: 400px;
-    background-color: var(--menu2-background-color);
-    color: var(--menu2-text-color);
+    background-color: #fff5fe;
+    color: #c77412;
 }
 
 .titlelechic {
@@ -253,7 +213,7 @@ main {
 
 .title-menulechic {
     font-family: "Playfair Display", serif;
-    color: var(--starter-menu2-color);
+    color: #c77412;
     letter-spacing: 0.1em;
     margin:0;
 }
@@ -266,8 +226,8 @@ main {
     margin: 15px;
     width: 300px;
     height: 400px;
-    background-color: var(--menu3-background-color);
-    color: var(--menu3-text-color);
+    background-color: #edefef;
+    color: #0887fb;
 }
 
 .titleledelice {
@@ -279,7 +239,7 @@ main {
 
 .title-menuledelice {
     font-family: "Patrick Hand", cursive;
-    color: var(--menu3-title-primary);
+    color: #0887fb;
     font-style: italic;
     margin-top: 0px;
 }
@@ -292,8 +252,8 @@ main {
     box-shadow: 0 0 10px 6px #e8e8e8;
     width: 300px;
     height: 400px;
-    background-color: var(--menu4-background-color);
-    color: var(--menu4-text-color);
+    background-color: #fdfffd;
+    color: #72bf56;
 }
 
 .titlelapalette {
@@ -305,7 +265,7 @@ main {
 
 .title-menulapalette {
     font-family: "Patrick Hand", cursive;
-    color: var(--menu4-title-primary);
+    color: #72bf56;
     font-style: italic;
     margin-top: 0;
 }
@@ -354,12 +314,12 @@ footer a:hover {
 
 .main-title {
     text-decoration: none;
-    color: var(--color-text-primary) ;
+    color: #fdcb46 ;
 }
 
 .link-footer {
     text-decoration: none;
-    color: var(--color-text-primary) ;
+    color: #fdcb46 ;
 }
 
 /*menu la note*/
@@ -376,7 +336,7 @@ footer a:hover {
     margin-bottom: 100px;
     width: 80%;
     height: 60%;
-    background-color: var(--menu1-background-color);
+    background-color: #fcdfdb;
     box-shadow: 0 0 10px 6px #e8e8e8;
 }
 
@@ -387,7 +347,7 @@ footer a:hover {
     background-color: transparent;
     text-decoration: none;
     border-bottom: none;
-    color: var(--menu1-text-color);
+    color: black;
 }
 
 ul {
@@ -433,12 +393,6 @@ h3 {
     transition: background-size 1s;
     font-size: 1.2em;
 
-}
-
-.title-starter-1:hover,
-.title-main-2:hover,
-.title-end-3:hover {
-    background-size: 100% 100%;
 }
 
 .title-starter-1 {
@@ -496,13 +450,13 @@ h3 {
 }
 
 .title-starter-lechic {
-    color: var(--starter-menu2-color);
+    color: #c77412;
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .color-text-starter {
-    color: var(--starter-menu2-color);
+    color: #c77412;
     margin-bottom: 50px;
 }
 .size-text-lechic{
@@ -510,32 +464,20 @@ h3 {
 }
 
 .title-maincourse-lechic {
-    color: var(--main-menu2-color);
+    color: #a56799;
     margin-left: 25px;
     margin-right: 25px;
 }
 
 .color-text-maincourse {
-    color: var(--main-menu2-color);
+    color: #a56799;
     margin-bottom: 50px;
 }
 
 .title-desert-lechic {
-    color: var(--end-menu2-color);
+    color: #a68bdf;
     margin-left: 20px;
     margin-right: 20px;
-}
-,.title-starter-lechic
-.title-maincourse-lechic,
-.title-desert-lechic {
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.title-starter-lechic:hover,
-.title-maincourse-lechic:hover,
-.title-desert-lechic:hover {
-    background-size: 100% 100%;
 }
 
 .title-starter-lechic {
@@ -557,7 +499,7 @@ h3 {
 }
 
 .color-text-desert {
-    color: var(--end-menu2-color);
+    color: #a68bdf;
     margin-bottom: 50px;
 }
 
@@ -614,7 +556,7 @@ h3 {
     background-size: 0 100%;
     transition: background-size 1s;
     font-size: 1em;
-    color: var(--menu1-text-color);
+    color: black;
 }
 
 .title-starter-lapalette:hover,
@@ -851,6 +793,7 @@ h3 {
         font-size: 1.5em;
     }
 }
+
 
 /*Small devices (landscape phones, 1200px and up)*/
 @media screen and (min-width: 1200px) {
