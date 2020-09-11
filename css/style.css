@@ -387,12 +387,16 @@ h3 {
 .title-starter-1,
 .title-main-2,
 .title-end-3 {
-    font-weight: bold;
-    background: linear-gradient(to top, #000000 3px, transparent 3px) no-repeat;
+    background: linear-gradient(to top, black 3px,  transparent 2px) no-repeat;
     background-size: 0 100%;
     transition: background-size 1s;
-    font-size: 1.2em;
+    color: black;
 
+}
+.title-starter-1:hover,
+.title-main-2:hover,
+.title-end-3:hover {
+    background-size: 100% 100%;
 }
 
 .title-starter-1 {
@@ -447,6 +451,12 @@ h3 {
     -webkit-text-fill-color: transparent;
     font-size: 1.8em;
     margin: 80px 0 50px 0;
+}
+
+.title-starter-lechic:hover,
+.title-maincourse-lechic:hover,
+.title-desert-lechic:hover {
+    background-size: 100% 100%;
 }
 
 .title-starter-lechic {
